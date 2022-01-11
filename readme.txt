@@ -1,1 +1,6 @@
-This is my first github file
+- 👋 Hi, I’m @stee1e - Real name Colin Steele, I'm based in West Wales, UK
+- 👀 I’m interested in front end web development and builidng apps to help small businesses work quicker
+- 🤖 I have mainyl worked with wordpress and I'm currently in a web dev bootcamp run by Bath University
+- 🌱 I’m currently learning java script, PHP, mysql and improving my CSS
+- 💞️ I’m looking to collaborate on project with people with more expereince and talent.  
+- 📫 How to reach me colin@tentoten.co
