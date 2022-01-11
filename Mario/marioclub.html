@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/home/colin/Documents/GitHub/web-dev-bootcamp/Mario/CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>MarioClub</h1>
+    </header>
+
+    <section class="hero-image">
+        <section class="hero-text-box">
+            <h2>
+                Welcome to MarioClub
+            </h2>
+        </section>
+        <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Mario/images/banner.png" alt="">
+
+    </section>
+
+
+    <nav class="black">
+        <div class="underline">
+        </div>
+        <div class="underline">
+        </div>
+        <div class="underline">
+        </div>
+        <a onClick="ul(0)">Join the club</a>
+        <a onClick="ul(1)">Latest news</a>
+        <a onClick="ul(2)">New Games</a>
+        <a onClick="ul(3)">Contact</a>
+        </a>
+    </nav>
+
+
+    <article class="main-paragraph">
+        <h3>
+            It's a me, Mario
+        </h3>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b><br> Itaque dolor odio voluptate sint, facilis alias nostrum doloremque aliquid non illo, eveniet distinctio laudantium accusantium quod atque cumque, corporis nobis molestiae dolores
+            natus nam? Beatae recusandae assumenda suscipit sint pariatur excepturi consequuntur adipisci odit sequi aspernatur libero quas enim rerum quasi reiciendis dolorem maxime, corporis velit voluptatem iure doloremque corrupti, aliquam totam aliquid!
+            Cum optio, aut tenetur ipsam dicta reprehenderit, molestiae a accusamus labore incidunt aliquid suscipit consequatur fuga inventore neque, ab consectetur quidem quas adipisci enim! Non veniam laboriosam repudiandae alias distinctio dicta,
+            voluptatum, error ullam dolorum minus corporis fugiat.</p>
+
+    </article>
+
+
+    <section class="row">
+        <div class="column">
+            <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Mario/images/thumb-1.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Mario/images/thumb-2.png" alt="Forest" style="width:100%">
+        </div>
+    </section>
+
+    <section class="signup">
+        <h4 class="join">Join Today!</h4>
+        <p class="signup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maiores ratione ad architecto, tempore beatae?</p>
+    </section>
+    <form>
+        <div class="container">
+            <input type="text" placeholder="Type email & hit enter!" name="mail" required>
+        </div>
+
+    </form>
+
+    <footer class="footerbar">
+        <p class="footer-text">Copyright 2022 Marioclub</p>
+    </footer>
+
+
+
+    <script>
+        function ul(index) {
+            console.log('click!' + index)
+
+            var underlines = document.querySelectorAll(".underline");
+
+            for (var i = 0; i < underlines.length; i++) {
+                underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+            }
+        }
+    </script>
+</body>
+
+</html>

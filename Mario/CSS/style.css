@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.topbar {
+    position: fixed;
+    background-color: red;
+    width: 100vw;
+    height: 100px;
+    z-index: 9999;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 5em;
+}
+
+.hero-text-box {
+    position: absolute;
+    background-color: orange;
+    font-size: 1.5em;
+    width: 40%;
+    z-index: 99;
+    margin-top: 250px;
+    padding: 100 0 100 0px;
+}
+
+h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5em;
+}
+
+
+/*Main paragraph - it's a me, mario*/
+
+.main-paragraph {
+    margin: 2% 10% 2% 10%;
+}
+
+h3 {
+    color: red;
+    font-size: 2em;
+    padding-bottom: 1%;
+}
+
+
+/*images - side by side with flex box*/
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 1% 10% 1% 10%;
+}
+
+
+/*email form*/
+
+form {
+    background-color: #d6d6d6;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.signup,
+.container {
+    background-color: #d6d6d6;
+}
+
+input[type=text] {
+    border: 2px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    width: 30%;
+    font-family: inherit;
+}
+
+h4.join {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 2%;
+}
+
+p.signup-text {
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+/*footer*/
+
+footer.footerbar {
+    background-color: red;
+    width: 100vw;
+    height: 60px;
+}
+
+p.footer-text {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* Menu nav bar taken from a codepen - https://codepen.io/bennettfeely/pen/MxOrLO*/
+
+:root {
+    --underline-height: .5em;
+    --transition-duration: .5s;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+nav {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    background: white;
+    padding: var(--underline-height) 0;
+    box-shadow: 0 1em 2em rgba(rgb(172, 2, 2), .05);
+    padding-left: 15%;
+}
+
+.underline {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 12%;
+    height: var(--underline-height);
+    width: 20%;
+    background: red;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: transform var(--transition-duration) ease-in-out;
+    &:nth-child(1) {
+        background: yellow;
+        transition: calc(var(--transition-duration) * .8);
+    }
+    &:nth-child(2) {
+        background: cyan;
+        transition: calc(var(--transition-duration) * 1.2);
+    }
+    &:nth-child(3) {
+        background: magenta;
+    }
+}
+
+a {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    z-index: 10;
+    width: 20%;
+    padding: 1em 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav.black {
+    .underline {
+        background: #222;
+        border-radius: .25em;
+        height: calc(var(--underline-height) / 2);
+        mix-blend-mode: initial;
+    }
+}
+
+nav.full {
+    font-weight: bold;
+    background: #111;
+    color: white;
+    .underline {
+        height: 100%;
+        background: gold;
+    }
+}
+
+nav.retro {
+    .underline {
+        border-radius: 100% 100% 0 0;
+        &:nth-child(1) {
+            background: gold;
+        }
+        &:nth-child(2) {
+            background: dodgerblue;
+        }
+        &:nth-child(3) {
+            background: tomato;
+        }
+    }
+}
+
+
+/*End of codepen*/
