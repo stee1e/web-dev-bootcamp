@@ -1,0 +1,54 @@
+* {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  color: blanchedalmond;
+}
+
+header {
+  background-image: url(/home/colin/Documents/laptop-web-dev-bootcamp/Hogwarts/images/banner.jpg);
+  width: 100%;
+  height: 80vh;
+}
+
+/*Menu Bar*/
+h1 {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5em;
+  padding-top: 8%;
+}
+nav {
+  height: 25px;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+/*Menu Bar*/
+
+h2 {
+    text-align: center;
+}
+
+.flexbox-container {
+  display: flex;
+  width: : 100%;
+  }
+
+
+
+.flex-item1,
+.flex-item2 {
+      width: 100%;
+}
+
+
