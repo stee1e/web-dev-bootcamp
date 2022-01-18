@@ -1,0 +1,38 @@
+body {
+    background: url(images/lance-rousseau-lance-rousseau-zim-background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#zim {
+    position: relative;
+    top: 500px;
+    background: url(images/zimtrans.png);
+    width: 213px;
+    height: 350px;
+    animation: walking_animation 1s steps(9) infinite, move_forward 8s linear infinite;
+}
+
+@keyframes walking_animation {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 1920px
+    }
+}
+
+@keyframes move_forward {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(1920px);
+    }
+}
+
+#street {
+    position: relative;
+    top: 500px;
+    border-bottom: 5px groove black;
+}

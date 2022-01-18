@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--source -https://www.educative.io/blog/animate-css-code-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=", initial-scale=1.0">
+    <title>Invader Zim Animation</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+    <a href="#" onclick="play()">
+
+        <audio id="audio" src="audio/Zim laughing.mp3" loop="loop"></audio>
+
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+
+        <div id="zim"></div>
+        <div id="street"></div>
+
+    </a>
+</body>
+
+</html>
