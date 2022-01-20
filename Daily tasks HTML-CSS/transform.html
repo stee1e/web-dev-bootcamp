@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistions </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #box {
+            display: flex;
+            padding-top: 50%;
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 50%;
+        }
+        
+        #box:hover {
+            background-color: lawngreen;
+            border-radius: 50%;
+            transform: rotate(90deg);
+            transform: scale(20);
+            transform: translateY(-50px);
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is my transition</h2>
+    <div class="container">
+        <div id="box">
+            This is the box
+        </div>
+    </div>
+</body>
+
+</html>
