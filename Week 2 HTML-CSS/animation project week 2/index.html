@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Dash Animation</title>
+    <link rel="stylesheet" href="/home/colin/Documents/GitHub/web-dev-bootcamp/Week 2 HTML-CSS/animation project week 2/style.css">
+</head>
+
+<body>
+
+    <script>
+        function play() {
+            var audio = new audio('/home/colin/Documents/GitHub/web-dev-bootcamp/Week 2 HTML-CSS/animation project week 2/files/My Little Pony Friendship is Magic - Series 1.mp3')
+            audio.play();
+        }
+    </script>
+
+    <a href="#" onclick="play()">
+
+        <audio id="audio" src="/home/colin/Documents/GitHub/web-dev-bootcamp/Week 2 HTML-CSS/animation project week 2/files/My Little Pony Friendship is Magic - Series 1.mp3" loop="loop"></audio>
+
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+
+        <div class="container">
+
+
+            <div class="moonandsun"></div>
+            <div class="clouds"> </div>
+            <div class="landscape"></div>
+
+
+        </div>
+        <div class="rainbowdash"></div>
+
+
+
+
+
+
+
+        </div>
+    </a>
+
+</body>
+
+</html>
