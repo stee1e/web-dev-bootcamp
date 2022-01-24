@@ -1,6 +1,11 @@
-let x = 7;
-console.log(typeof x);
+var str = "This is a string";
+console.log(str);
 
-let a;
-console.log(a);
-console.log(typeof a);
+var position = str.indexOf('is');
+console.log(position)
+
+position = str.lastIndexOf('is');
+console.log(position)
+
+var substr = str.slice(1, 7);
+console.log(substr)

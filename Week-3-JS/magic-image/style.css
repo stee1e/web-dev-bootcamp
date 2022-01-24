@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    top: 20vh;
+    width: 1200px;
+    height: 600px;
+}
+
+.splice {
+    background-image: url(/home/colin/Documents/GitHub/web-dev-bootcamp/Week-3-JS/magic-ripped/splice-tear.png);
+    background-size: contain;
+    z-index: 99;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.eyes {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/home/colin/Documents/GitHub/web-dev-bootcamp/Week-3-JS/magic-ripped/eyes.png);
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.eyes:hover {
+    animation: eyesforward 1s infinite linear;
+}
+
+@keyframes eyesforward {
+    0% {
+        transform: scale3d(0);
+    }
+    100% {
+        transform: scale3d(2.5, 1.2, 0.3);
+    }
+}
+
+
+/**Animate the eyes to change blend mode and move forward on hover**/
