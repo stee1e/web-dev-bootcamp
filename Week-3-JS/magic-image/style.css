@@ -32,9 +32,12 @@
     mix-blend-mode: difference;
 }
 
+
+/*
 .eyes:hover {
     animation: eyesforward 1s infinite linear;
 }
+*/
 
 @keyframes eyesforward {
     0% {
