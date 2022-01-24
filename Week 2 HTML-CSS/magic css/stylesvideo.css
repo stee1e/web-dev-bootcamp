@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Beastly', cursive;
+}
+
+.container {
+    width: 100v%;
+    height: 100%;
+    position: relative;
+}
+
+.container video {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
