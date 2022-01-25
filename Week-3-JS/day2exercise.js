@@ -3,6 +3,7 @@ var firstLetter = name.slice(0, 1);
 var capitalLetter = firstLetter.toUpperCase();
 var fullName = name.slice(1);
 name = capitalLetter + fullName
+alert("Hello " + name);
 
 
 var a = "3";
