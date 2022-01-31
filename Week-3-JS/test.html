@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+    <div id="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur quae eos! Illum, officia iusto facilis magni quia quis, quisquam placeat temporibus dolor assumenda quo voluptatem mollitia voluptates fuga eaque laudantium iure aliquid, repellendus
+            porro ex vero voluptas nulla aspernatur. Aperiam nam fuga id quibusdam deserunt sed nulla nostrum tenetur nemo. Labore ut pariatur consequatur, illo fugit perspiciatis neque ipsam porro repellendus vel suscipit consequuntur iste deleniti dolorem!
+            Fugit libero ratione vitae adipisci temporibus at officia magni beatae deserunt itaque impedit modi iste laudantium praesentium reprehenderit earum maxime animi, nihil ea voluptates sequi facilis necessitatibus? Nostrum veniam enim maxime
+            sit nihil consequatur asperiores suscipit cum quidem, impedit nesciunt omnis? Rem in cupiditate facilis veniam doloremque veritatis aperiam quos ea atque libero! Cumque nesciunt distinctio cum ad aspernatur, minima quis hic sunt beatae, porro
+            sint voluptatum placeat iusto, perspiciatis assumenda excepturi suscipit sit architecto tempore voluptatem dolor similique veniam provident aliquid. Itaque animi blanditiis, aliquid deleniti, alias ipsam provident doloremque placeat rerum
+            nemo, unde quaerat minus voluptate nesciunt! Molestiae facere libero iusto nulla, aperiam quisquam voluptas sapiente, magni voluptates qui iste voluptatum! Explicabo, modi. Odit unde ipsum eius magni dicta, ut dolorum repellendus consectetur
+            est, nisi ex velit hic accusamus? Totam consequuntur optio maiores vitae obcaecati placeat architecto recusandae dignissimos, fugiat repellendus fuga suscipit. Tempore dolores minus aliquam, laborum ut dolore natus sapiente hic! Tempora debitis
+            itaque recusandae praesentium quis repellat ab illum fugit repudiandae! At reprehenderit laboriosam modi natus dolorem impedit culpa consectetur quasi unde. Deserunt quaerat suscipit, dolores dolor error sit commodi expedita id pariatur.</p>
+    </div>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert('Mouse Inside')
+        });
+    </script>
+
+</body>
+
+</html>
