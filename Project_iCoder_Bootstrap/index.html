@@ -8,8 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!--Internal Style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <title>iCoder</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">iCoder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,20 +28,11 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Topics
                 </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Services</a></li>
@@ -52,14 +44,16 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
+
+
                 </ul>
                 <form class="d-flex gap-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success btn-outline-light " type="submit">Search</button>
-                    <button class="btn btn-outline-light btn-danger " type="submit">Search</button>
-                    <button class="btn btn-outline-light btn-danger " type="submit">Search</button>
+                    <button class="btn btn-outline-light btn-danger " type="submit">Login</button>
+                    <button class="btn btn-outline-light btn-danger " type="submit">Signup</button>
 
                 </form>
             </div>
@@ -70,10 +64,10 @@
     <!--Hero Image-->
 
     <center>
-        <div class="card text-white position-relative">
-            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/2.jpg" class="card-img img-fluid  w-100" alt="This is the hero image">
-            <div class="card-img-overlay position-absolute top-50 start-50 translate-middle">
-                <h1 class="display-4">The Best Coding blog</h1>
+        <div class="card text-white position-relative border border-0 rounded-0">
+            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/2.jpg" class="card-img img-fluid  w-100 rounded-0" alt="This is the hero image">
+            <div class="card-img-overlay position-absolute top-50 ">
+                <h1 class="display-4">The Best Coding Blog</h1>
 
                 <p>Technology, Development and Trends</p>
                 <p class="lead">
@@ -98,14 +92,16 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0 ">
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="card-body ">
+                                <h6 class="card-category text-primary ">World</h6>
+                                <h4 class="card-title ">Global Conferences</h4>
+                                <h6 class="card-date small text-muted ">Nov 12</h6>
+                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text "><small class="text-primary ">Continue Reading</small></p>
                             </div>
                         </div>
                         <div class="col-md-4 style=" ">
-                            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/thumb1.jpg " class="img-fluid rounded-start " alt="... ">
+                            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/thumb1.jpg " class="card-image-right img-fluid rounded-end " alt="... ">
                         </div>
                     </div>
                 </div>
@@ -117,13 +113,15 @@
                     <div class="row g-0 ">
                         <div class="col-md-8 ">
                             <div class="card-body ">
-                                <h5 class="card-title ">Card title</h5>
+                                <h6 class="card-category text-success ">Design</h6>
+                                <h4 class="card-title ">Learn Designing</h4>
+                                <h6 class="card-date small text-muted ">Nov 12</h6>
                                 <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text "><small class="text-muted ">Last updated 3 mins ago</small></p>
+                                <p class="card-text "><small class="text-primary ">Continue Reading</small></p>
                             </div>
                         </div>
                         <div class="col-md-4 style=" ">
-                            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/thumb1.jpg " class="img-fluid rounded-start " alt="... ">
+                            <img src="Images/thumb1.jpg" class="card-image-right img-fluid rounded-end " alt="... ">
                         </div>
                     </div>
                 </div>
@@ -135,14 +133,16 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="card-body ">
+                                <h6 class="card-category text-danger ">FrontEnd</h6>
+                                <h4 class="card-title ">Bootstrap Templates</h4>
+                                <h6 class="card-date small text-muted ">Nov 12</h6>
+                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text "><small class="text-primary ">Continue Reading</small></p>
                             </div>
                         </div>
                         <div class="col-md-4 style=" ">
-                            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/thumb1.jpg " class="img-fluid rounded-start " alt="... ">
+                            <img src="Images/thumb2.jpg " class="card-image-right img-fluid rounded-end " alt="... ">
                         </div>
                     </div>
                 </div>
@@ -152,13 +152,15 @@
                         <div class="row g-0 ">
                             <div class="col-md-8 ">
                                 <div class="card-body ">
-                                    <h5 class="card-title ">Card title</h5>
+                                    <h6 class="card-category text-warning ">Python</h6>
+                                    <h4 class="card-title ">Learn Python</h4>
+                                    <h6 class="card-date small text-muted ">Nov 12</h6>
                                     <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text "><small class="text-muted ">Last updated 3 mins ago</small></p>
+                                    <p class="card-text "><small class="text-primary ">Continue Reading</small></p>
                                 </div>
                             </div>
                             <div class="col-md-4 style=" ">
-                            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/thumb1.jpg " class="img-fluid rounded-start " alt="... ">
+                            <img src="Images/thumb3.jpg" class="card-image-right img-fluid rounded-end " alt="... ">
                         </div>
                     </div>
                 </div>
@@ -166,19 +168,17 @@
 
         </div>
 
-        <footer id=“sticky-footer” class=“flex-shrink-0 py-4 bg-dark text-white-50 ">
-            <div class=“container text-left”>
-              <small
-                >Copyright &copy; 2021-2022, iCODER, Inc. <a href=“#”>Terms</a>
-                <a href=“#”>Privacy</a></small
-              >
-            </div>
-            <div class=" ">
-              <button onclick=“topFunction()” id=“myBtn” title=“Go to top”>Top</button>
-            </div>
-          </footer>
-        
+        <!--Footer-->
+        <footer id="sticky-footer" class="flex-shrink-0 w-100 py-4 text-black-50">
+            <div class="container w-100 text-left">
+                <small>Copyright &copy; 2021-2022, iCODER, Inc. <a href="#">Terms</a>
+        <a href="#">Privacy</a></small>
+                <div class="float-end">
+                    <a href="#" class="pb-1">Back to top</a></small </div>
+                </div>
 
+        </footer>
+        <!--Footer-->
         <!--Cards-->
 
         <!-- Optional JavaScript; choose one of the two! -->

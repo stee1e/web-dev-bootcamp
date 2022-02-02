@@ -14,8 +14,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">iCoder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -26,8 +26,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Topics
-                </a>
+              Topics
+            </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Services</a></li>
 
@@ -56,13 +56,75 @@
     <!--Navbar-->
 
 
+    <!-- Form starts here -->
 
+    <div class="container">
+        <div class="row">
+            <div class="card d-flex border-0 justify-content-center mx-auto my-3 p-5">
+                <h2>Contact Us</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6 w-100">
+                        <label for="inputEmail">Enter your email address:</label>
+                        <input type="email" class="form-control" id="inputEmail" name="youremail" />
+                        <div id="email_error" class="val_error"></div>
+                    </div>
+                    <!--Dropdown-->
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" id="sel1">
+                          <option>Web</option>
+                          <option>Design</option>
+                          <option>Development</option>
+                          <option>Python</option>
+                        </select>
+                    </div>
 
+                    <!-- Check boxes -->
+                    Are you a member?
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                        <label class="form-check-label" for="inlineCheckbox1">Yes
+            </label></div>
+                    <br>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                    <label class="form-check-label" for="inlineCheckbox1">Are you a Professor?
+                                    </label>
+                </div>
 
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                    <label class="form-check-label" for="inlineCheckbox1">Are you a Coder?
+            </label>
+                </div>
+                <div id="phone_error" class="val_error"></div>
+            </div>
+            <div class="form-group md-6 w-100">
+                <label for="exampleFormControlTextarea1">Tell us about yourself:
+            </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+                <div id="message_error" class="val_error"></div>
+            </div>
 
+            <div class="form-group md-6 w-100">
+                <label for="exampleFormControlTextarea1">Elaborate your concern:
+            </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+                <div id="message_error" class="val_error"></div>
+            </div>
 
+            <!-- Submit button -->
 
-
+            <div class="form-button pt-4">
+                <button type="submit" class="btn btn-primary btn-block btn-lg" value="Register" name="register">
+              <span>Submit</span>
+            </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 
 
 
@@ -70,21 +132,13 @@
     <footer id="sticky-footer" class="flex-shrink-0 w-100 py-4 text-black-50">
         <div class="container w-100 text-left">
             <small>Copyright &copy; 2021-2022, iCODER, Inc. <a href="#">Terms</a>
-<a href="#">Privacy</a></small>
+    <a href="#">Privacy</a></small>
             <div class="float-end">
                 <a href="#" class="pb-1">Back to top</a></small </div>
             </div>
 
     </footer>
     <!--Footer-->
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
