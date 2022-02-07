@@ -62,7 +62,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -105,12 +105,29 @@
     <!--Hero Image-->
 
     <center>
-        <div class="card text-white position-relative border border-0 rounded-0">
-            <img src="/home/colin/Documents/Web Dev Bootcamp/Project_iCoder_Bootstrap/Images/2.jpg" class="card-img img-fluid  w-100 rounded-0" alt="This is the hero image">
-            <div class="card-img-overlay position-absolute top-50 ">
-                <h1 class="display-4">The Best Coding Blog</h1>
 
-                <p>Technology, Development and Trends</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Week4-bootstrap-figma/Project_iCoder_Bootstrap/Images/1.jpg" class="d-block w-100" alt="image of laptop">
+                </div>
+                <div class="carousel-item">
+                    <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Week4-bootstrap-figma/Project_iCoder_Bootstrap/Images/2.jpg" class="d-block w-100" alt="image of laptop">
+                </div>
+                <div class="carousel-item">
+                    <img src="/home/colin/Documents/GitHub/web-dev-bootcamp/Week4-bootstrap-figma/Project_iCoder_Bootstrap/Images/3.jpg" class="d-block w-100" alt="image of laptop">
+                </div>
+            </div>
+            <div class="card-img-overlay position-absolute top-50 ">
+                <h3 class="display-3" style="color: whitesmoke; font-weight: bold; font-size: 35px;">The Best Coding Blog</h3>
+
+
+                <p style="color: whitesmoke;">Technology, News, Development and Trends</p>
                 <p class="lead">
                     <a class="btn btn-danger btn-lg" href="#" role="button">Technology</a>
                     <a class="btn btn-primary btn-lg" href="#" role="button">Web Development</a>
@@ -118,9 +135,16 @@
 
                 </p>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
     </center>
-
     <!--hero image-->
     <br>
 
