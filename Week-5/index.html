@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <div class="contactcontainer">
+
+    
+<form action="#" target="self" id="form1" name="myform" onsubmit ="return validateForm()" mode ="post">
+    <div class="formdesign" id="name" >
+    Name:<input type="text" name="fname">
+    <span class="formerror"></span>
+</div>
+<div class="formdesign" id="email" >
+    Email:<input type="email" name="femail">
+    <span class="formerror"></span>
+</div>
+<div class="formdesign" id="phone"  >
+    Phone:<input type="phone" name="fphone">
+    <span class="formerror"></span>
+</div>
+<div class="formdesign" id="password">
+    Password:<input type="password"  name="fpassword" >
+    <span class="formerror"></span>
+</div>
+<div class="formdesign" id="confirmpassword" >
+    Confrim password:<input type="password" name="fconfirmpassword">
+    <span class="formerror"></span>
+</div>
+
+<button type="submit" form="form1" value="Submit">Submit</button>
+
+</form>
+</div>
+
+   <script src="form.js"></script>
+</body>
+</html>

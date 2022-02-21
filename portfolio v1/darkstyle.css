@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap");
+
+/*
+colour pallete -
+#f6d7a8 - cream
+#0c0c0c - dark
+#f26d43 - orange
+
+*/
+
+body {
+  background-color: #0c0c0c;
+  font-family: "Corben", cursive;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* --------------------------Side Nav -------------------------*/
+/* The side navigation menu */
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: -5px;
+  background-color: #0c0c0c;
+  opacity: 95%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.6s ease-out;
+  border-right: 5px white solid;
+
+}
+
+.menu-text {
+  transform: rotate(354deg);
+  margin-left: 40px;
+  
+}
+
+.menu-button {
+  display: block;
+  position: relative;
+  cursor: url(images/metalhands2.png), auto;
+  color: #f6d7a8;
+  font-size: 50px;
+  top: -200px;
+  left: 4%;
+  transform: rotate(348deg);
+}
+
+.menu-button:hover {
+  transform: rotate(347.9deg);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 15px 8px 50px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f6d7a8;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f26d43;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------Side Nav -------------------------*/
+
+/* --------------------------Main Layout-----------------------*/
+
+h1 {
+  padding-top: 0px;
+  z-index: 9999;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: -25px;
+  left: -54px;
+}
+
+.title-name {
+  position: absolute;
+  color: #f6d7a8;
+  z-index: 1;
+  font-size: 12rem;
+  transform: rotate(352deg);
+}
+
+.top-angle {
+  background-color: #0c0c0c;
+  position: absolute;
+  position: fixed;
+  width: 2200px;
+  height: 600px;
+  left: -100px;
+  top: -400px;
+  transform: rotate(172deg);
+  border-top: 5px solid white;
+  -webkit-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  -moz-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+}
+
+.bottom-angle {
+  background-color: #0c0c0c;
+  position: absolute;
+  position: fixed;
+  width: 2200px;
+  height: 600px;
+  left: -100px;
+  top: 85vh;
+  bottom: 0px;
+  transform: rotate(172deg);
+  border-bottom: 5px solid white;
+  -webkit-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  -moz-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+}
+
+.about-colin-short {
+  position: absolute;
+  bottom: 47px;
+  left: 20vw;
+  transform: rotate(352deg);
+}
+
+h3 {
+  color: #f6d7a8;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.bottom-links {
+  position: absolute;
+  bottom: 5px;
+}
+
+.bottom-links .links {
+  display: block;
+  position: relative;
+  left: 50vw;
+}
+
+a {
+  color: #f6d7a8;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-inline-end: 45px;
+}
+
+/* -------------Toggle Button --------------*/
+
+.touch {
+  display: inline-block;
+  color: #f6d7a8;
+  font-size: 1rem;
+  margin-left: 8vw;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px;
+  bottom: 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6d7a8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f26d43;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #141414;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px #f26d43;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

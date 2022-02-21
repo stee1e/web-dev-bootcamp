@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Chrome" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Colin Steele - Web developer & UX/UI designer</title>
+    <meta name="Developer" content="Colin Steele" >
+
+    <link rel="stylesheet" href="lightstyle.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" onMouseleave="closeNav()">
+     
+      <div class="menu-text">
+        <a href="javascript:void(0)" onclick="openAbout()">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- ============================ Main Page ================================= -->
+
+    <div class="top-angle">
+    <div class="hamburger-menu">
+    <span class="menu-button" onclick="openNav()">&#9776;</span>
+    </div>
+    <h1 class="title-name">Colin Steele</h1>
+    </div>
+    <span class="menu-button" onclick="openNav()">&#9776;</span>
+    <!-- ============================ About Section ================================= -->
+
+    <div id="aboutslider" class="about-container">
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          magni delectus quidem fugit, harum quod, error illum ab voluptatum
+          nisi quam laudantium commodi omnis. Accusamus explicabo itaque at sint
+          minus, nulla quo officia ab ducimus numquam tempora, odit autem nihil
+          nisi optio provident ullam rem sapiente et, a repudiandae ipsam
+          doloribus nostrum. Perferendis minus nobis voluptatibus repellat
+          dolorem nam corporis eos, deserunt cum mollitia assumenda iste animi
+          nemo asperiores vero dolor facere aspernatur. Praesentium laudantium
+          in vel dolore minus. Tempore eveniet porro in! Aspernatur, minima.
+          Nulla, nisi perferendis, illo, labore cum non dolorum tenetur
+          repellendus sapiente officia perspiciatis amet? Est!
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="images/colinodd.png" alt="">
+      </div>
+    </div>
+
+  <div class="bottom-angle">
+
+    <div class="about-colin-short">
+      <h3>
+        Hi, I’m Colin, a front end developer <br class="line-break"> and UX/UI designer based in West Wales.
+      </h3>
+    </div>
+
+
+    <div class="bottom-links">
+      <div class="links">
+        <a href="https://github.com/stee1e">github</a>
+        <a href="https://www.linkedin.com/in/colin-steele-477491227/"
+          >linkedin</a>
+          <br class="line-break">
+        <a href="#">Resume</a>
+        <a href="mailto: hello@colinsteele.co.uk">hello@colinsteele.co.uk</a>
+
+        <p class="touch">Touch Me!</p>
+        <label class="switch">
+          <input onchange="toggleTheme()" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+
+    <script src="animations.js"></script>
+  </body>
+</html>

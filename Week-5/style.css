@@ -1,0 +1,24 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #353435;
+    margin: 0;
+    padding: 0;
+    color:aliceblue;
+}
+
+.contactcontainer {
+    width: 60%;
+    background-color: #626262;
+    padding: 20px 20px;
+    top: 10%;
+    left: 20%;
+    position:absolute;
+    box-shadow: 4px 4px  6px rgb(175, 175, 175);
+        }
+
+        .formdesign input {
+            width: 40%;
+            margin: 10px;
+            padding: px 50px;
+display: inline-block;
+        }

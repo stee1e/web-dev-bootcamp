@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap");
+
+/*
+colour pallete -
+#f6d7a8 - cream
+#0c0c0c - dark
+#f26d43 - orange
+
+*/
+
+body {
+  background-color: #f26d43;
+  font-family: "Corben", cursive;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* --------------------------Side Nav -------------------------*/
+/* The side navigation menu */
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -5px;
+  background-color: #0c0c0c;
+  opacity: 95%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.6s ease-out;
+  border-right: 5px white solid;
+}
+
+.menu-button {
+  display: block;
+  position: relative;
+  cursor: url(images/metalhands2.png), auto;
+  /*cursor: pointer;*/
+  color: #f6d7a8;
+  font-size: 40px;
+  width: 100px;
+  top: -1vw;
+  left: 4%;
+  z-index: 99;
+  /*transform: rotate(348deg);*/
+}
+.hamburger-menu {
+  top: 10px;
+  height: 50px;
+  width: 50px;
+  z-index: 99;
+}
+.menu-text {
+  transform: rotate(354deg);
+  margin-left: 40px;
+}
+
+/*
+.menu-button:hover {
+  transform: rotate(347.9deg);
+}
+*/
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 15px 8px 50px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f6d7a8;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f26d43;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------Side Nav -------------------------*/
+
+/* ==========================Main Layout========================*/
+
+/*----------------------------Top angle------------------------*/
+
+h1 {
+  padding-top: 0px;
+
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 286px;
+  left: 50px;
+  font-size: 7rem;
+  /*font-size: clamp(3rem, -21.8108rem + 38.9189vw, 12rem);*/
+  white-space: nowrap;
+}
+
+.title-name {
+  position: absolute;
+  color: #f6d7a8;
+  z-index: 99;
+}
+
+.top-angle {
+  background-color: #0c0c0c;
+  position: absolute;
+  position: fixed;
+  width: 2200px;
+  height: 450px;
+  left: -100px;
+  top: -400px;
+  z-index: 9;
+  transform: rotate(353deg);
+  border-bottom: 5px solid white;
+  -webkit-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  -moz-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+}
+
+/*-----------------Bottom Angle--------------------*/
+
+.bottom-angle {
+  background-color: #0c0c0c;
+  position: absolute;
+  position: fixed;
+  width: 2200px;
+  height: 600px;
+  left: 0px;
+  top: 82vh;
+  bottom: 0px;
+  transform: rotate(353deg);
+  border-top: 5px solid white;
+  -webkit-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  -moz-box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+  box-shadow: -1px -1px 22px 1px rgba(59, 59, 59, 1);
+}
+
+.about-colin-short {
+  display: block;
+  position: relative;
+  margin-left: 10vw;
+  bottom: 4vh;
+  /*transform: rotate(7deg);*/
+}
+
+h3 {
+  color: #f6d7a8;
+  font-size: 2rem;
+  font-weight: 400;
+  /*white-space: nowrap;*/
+}
+
+.bottom-links {
+ 
+  margin-left: 51vw;
+  padding-top: 3vh;
+  bottom: 1vh;
+  transform: rotate(7deg);
+}
+
+a {
+  color: #f6d7a8;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-inline-end: 45px;
+}
+
+a:hover {
+  color: #f26d43;
+}
+
+/* -------------Toggle Button --------------*/
+
+.touch {
+  display: inline;
+  position: relative;
+  justify-content: flex-end;
+
+  color: #f6d7a8;
+  font-size: 1rem;
+  margin-left: 1vw;
+  padding-right: 2vh;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px;
+  bottom: 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6d7a8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f26d43;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0c0c0c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px #f26d43;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* -------------About Section --------------*/
+
+.about-container {
+  display: inline;
+  position: absolute;
+  height: 100vh;
+  width: 0;
+  top: 100px;
+  overflow-x: hidden;
+
+  transition: 0.8s ease-out;
+}
+
+.about-text {
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  top: 85px;
+  width: 60%;
+}
+
+.about-text p {
+  color: #0c0c0c;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.about-photo {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 225px;
+}
+
+/* ---------------------- Media Queries ----------------------*/
+
+
+@media screen and (min-width: 1380px) {
+.line-break {
+  display: none;
+} 
+}
+
+
+
+@media screen and (min-width: 2080px) {
+  .top-angle {
+    width: 4000px;
+    height: 475px;
+  }
+}
+
+@media screen and (max-width: 1379px) {
+  h1 {
+    left: 0.5vw;
+  }
+  .menu-button {
+    font-size: 30px;
+  }
+  .top-angle {
+    height: 425px;
+    left: -40px;
+  }
+  .title-name {
+    font-size: 100px;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  .about-colin-short {
+    bottom: 4.5vh;
+    left: 5vw;
+  }
+  .bottom-angle {
+    top: 80vh;
+  }
+  .bottom-links {
+    margin-left: 27vw;
+   padding-top: 5.5vh;
+     }
+     .line-break {
+      display: none;
+    } 
+}
+
+@media screen and (max-width: 720px) {
+  .title-name {
+    font-size: 42px;
+  }
+  h1 {
+    top: 38vh;
+    left: 5.5vw;
+  }
+  .top-angle {
+    height: 375px;
+    left: -40px;
+  }
+  h3 {
+    font-size: .8rem;
+  }
+  .about-colin-short {
+    bottom: 1vh;
+    left: 10vw;
+    
+  }
+  .bottom-links {
+    margin-left: 13vw;
+   padding-top: 15.5vh;
+     }
+
+     .touch {
+       display: none;
+     }
+
+     .switch {
+       display: none;
+     }
+
+  .line-break {
+    display:inline;
+  } 
+
+  .bottom-angle {
+    top: 65vh;
+  }
+}
+}
+
