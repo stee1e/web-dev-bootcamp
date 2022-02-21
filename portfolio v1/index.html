@@ -13,12 +13,13 @@
     <div id="mySidenav" class="sidenav" onMouseleave="closeNav()">
      
       <div class="menu-text">
-        <a href="javascript:void(0)" onclick="openAbout()">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="javascript:void(0)" onclick="closeProjects(), closeContact (), openAbout()">About</a>
+        <a href="javascript:void(0)" onclick="closeAbout(), closeContact (), openProjects()">Projects</a>
+        <a href="javascript:void(0)" onclick="closeAbout(), closeProjects(), openContact()">Contact</a>
       </div>
     </div>
 
+  
     <!-- ============================ Main Page ================================= -->
 
     <div class="top-angle">
@@ -28,7 +29,11 @@
     <h1 class="title-name">Colin Steele</h1>
     </div>
     <span class="menu-button" onclick="openNav()">&#9776;</span>
+  </div>
     <!-- ============================ About Section ================================= -->
+
+    
+   
 
     <div id="aboutslider" class="about-container">
       <div class="about-text">
@@ -47,11 +52,57 @@
         </p>
       </div>
       <div class="about-photo">
-        <img src="images/colinodd.png" alt="">
+        <img class="colin-photo" src="images/colinodd.png" alt="">
       </div>
     </div>
 
-  <div class="bottom-angle">
+    <!-- ============================ Project Section ================================= -->
+
+    <div id="projectslider" class="project-container">
+
+      <div class="wrapper">
+        <div class="project1">
+        
+        </div>
+        <div class="project2">2</div>
+        <div class="project3">3</div>
+        <div class="project4">4</div>
+        <div class="project5">5</div>
+        <div class="project6">6</div>
+        <div class="project7">7</div>
+        <div class="project8">8</div>
+      </div>
+  
+      </div>
+  
+  <!-- ============================ Contact Section ================================= -->
+  
+    <div id="contactslider" class="contact-container">
+  
+      <div class="live-form">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <br>
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <br>
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+     </div>
+    </div>
+    
+  
+   
+    <!-- ============================ Bottom Container ================================= -->
+  
+    <div class="bottom-angle">
 
     <div class="about-colin-short">
       <h3>
@@ -59,13 +110,13 @@
       </h3>
     </div>
 
-
+    
     <div class="bottom-links">
       <div class="links">
         <a href="https://github.com/stee1e">github</a>
         <a href="https://www.linkedin.com/in/colin-steele-477491227/"
           >linkedin</a>
-          <br class="line-break">
+         
         <a href="#">Resume</a>
         <a href="mailto: hello@colinsteele.co.uk">hello@colinsteele.co.uk</a>
 
@@ -80,5 +131,7 @@
 </body>
 
     <script src="animations.js"></script>
+    <!--animated text-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>

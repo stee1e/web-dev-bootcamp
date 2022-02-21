@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  
 }
 
 /* --------------------------Side Nav -------------------------*/
@@ -182,6 +183,10 @@ a:hover {
   color: #f26d43;
 }
 
+.line-break {
+  display: none;
+}
+
 /* -------------Toggle Button --------------*/
 
 .touch {
@@ -260,6 +265,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
+
 /* -------------About Section --------------*/
 
 .about-container {
@@ -290,9 +297,127 @@ input:checked + .slider:before {
 .about-photo {
   display: inline-block;
   position: relative;
-  top: 50px;
-  left: 225px;
+  top: -2vh;
+  left: 11vw;
 }
+
+.colin-photo {
+  width: 20vw;
+
+}
+
+/* -------------Project Section --------------*/
+
+
+.project-container {
+  display: inline;
+  position: absolute;
+  height: 100vh;
+  width: 0vw;
+  
+  top: 8rem;
+  overflow-x: hidden;
+  transition: 0.8s ease-in;
+  transform: rotate(353deg);
+ 
+}
+
+.wrapper > div{
+  background-color: #0c0c0c;
+  border: 1px black solid;
+  border-radius: 8px;
+}
+ 
+.wrapper > div:nth-child(odd){
+  background-color: #f6d7a8;
+}
+ 
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 5vw;
+  margin-right: 2vw;
+  grid-gap: 10px;
+  grid-template-rows: 30vh 30vh;
+  overflow: hidden;
+}
+
+.project1 {
+  background: url(images/thedailyratings.png);
+  background-size: cover;
+}
+.project2 {
+  background: url(images/thedailyratings.png);
+  background-size: cover;
+}
+.project3 {
+  background: url(images/thedailyratings.png);
+  background-size: cover;
+}
+.project4 {
+  background: url(images/thedailyratings.png);
+  background-size: cover;
+}
+.project5 {
+  background: url(images/spider.jpeg);
+  background-size: cover;
+}
+.project6 {
+  background: url(images/spider.jpeg);
+  background-size: cover;
+}
+.project7 {
+  background: url(images/spider.jpeg);
+  background-size: cover;
+}
+.project8 {
+  background: url(images/spider.jpeg);
+  background-size: cover;
+}
+
+
+/* -------------Contact Section --------------*/
+
+
+.contact-container {
+  display: inline;
+  position: absolute;
+  height: 100vh;
+  width: 0vw;
+  top: 13rem;
+  padding-top: 25px;
+  overflow-x: hidden;
+  transition: 0.8s ease-in;
+ }
+
+ .live-form {
+   display: grid;
+   justify-content: center;
+   justify-items: center;
+    
+ }
+
+ #fs-frm {
+  height: 40vh;
+  width: 10vw;
+  border: none;
+  border-radius: 8px;
+  background-color: #f6d7a8;
+  -webkit-box-shadow: 1px 1px 22px 1px rgba(59, 59, 59, 1);
+ -moz-box-shadow: 1px 1px 22px 1px rgba(59, 59, 59, 1);
+ box-shadow: 1px 1px 22px 1px rgba(59, 59, 59, 1);
+ padding: 2vh 8vw 2vh 8vw;
+ }
+
+ #fs-frm-inputs {
+  display: block;
+  position: relative;
+border: none;
+width: 9vw;
+ }
+
+
+
 
 /* ---------------------- Media Queries ----------------------*/
 
@@ -344,6 +469,29 @@ input:checked + .slider:before {
      .line-break {
       display: none;
     } 
+
+    .about-text {
+      left: 6vw;
+          width: 100%;
+        }
+  
+        .about-text p {
+          margin-right: 34vw;
+          font-size: 1.5rem;
+          margin-top: -1vh;
+          
+        }
+        .about-photo {
+          position: absolute;
+          display: flex;
+          margin-top: 10vh;
+          margin-left: 61vw;
+          
+        }
+
+        .colin-photo {
+          width: 26vw;
+        }
 }
 
 @media screen and (max-width: 720px) {
@@ -351,8 +499,8 @@ input:checked + .slider:before {
     font-size: 42px;
   }
   h1 {
-    top: 38vh;
-    left: 5.5vw;
+    top: 35vh;
+    left: 1.5vw;
   }
   .top-angle {
     height: 375px;
@@ -386,6 +534,33 @@ input:checked + .slider:before {
   .bottom-angle {
     top: 65vh;
   }
+
+  .about-text {
+    left: 6vw;
+        width: 100%;
+      }
+
+      .about-text p {
+        margin-right: 10vw;
+        font-size: 1rem;
+        margin-top: 26vh;
+
+      }
+      .about-photo {
+        position: absolute;
+        display: flex;
+        top:-12vh;
+        margin-left: 10vw;
+        
+        
+      }
+      .colin-photo {
+        width: 60vw;
+      }
 }
+}
+}
+
+
 }
 
